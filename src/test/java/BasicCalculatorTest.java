@@ -35,9 +35,45 @@ class BasicCalculatorTest
         Long result = basicCalculator.multi(number1, number2);
 
         // Assert
-        assertEquals(expectedValue, result); //el assertEquals compara si los numeros ingresados  y sumados son iguales a la variable expectedValue
+        assertEquals(expectedValue, result);
+    }
+
+    @Test
+
+    public void restar() {
+        // Arrange
+        Long number1 = 5L;
+        Long number2 = 2L;
+        Long expectedValue = 3L;
+
+        // Act
+
+        Long result = basicCalculator.restar(number1, number2);
+
+        // Assert
+        assertEquals(expectedValue, result);
     }
 
 
-    
+    @Test
+    public void divdir() {
+        // Arrange
+        Long number1 = 5L;
+        Long number2 = 2L;
+        Long expectedValue = 3L;
+
+        // Act
+
+        Long result = basicCalculator.restar(number1, number2);
+
+        // Assert
+        assertEquals(expectedValue, result);
+    }
+
+
+
+
+
+
+
 }
