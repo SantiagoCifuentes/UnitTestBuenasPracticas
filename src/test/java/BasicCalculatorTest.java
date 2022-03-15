@@ -59,12 +59,12 @@ class BasicCalculatorTest
     public void divdir() {
         // Arrange
         Long number1 = 5L;
-        Long number2 = 2L;
-        Long expectedValue = 3L;
+        Long number2 = 1L;
+        Long expectedValue = 5L;
 
         // Act
 
-        Long result = basicCalculator.restar(number1, number2);
+        Long result = basicCalculator.dividir(number1, number2);
 
         // Assert
         assertEquals(expectedValue, result);

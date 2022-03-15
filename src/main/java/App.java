@@ -23,8 +23,8 @@ public class App
         Long number2 = Long.valueOf( textNumber2 );
 
         BasicCalculator calculator = new BasicCalculator();
-        Long result = Long.valueOf(calculator.dividir( number1, number2 ));
+        Long result = calculator.dividir( number1, number2 );
 
-        System.out.println( number1 + " / " + number2 + " = " + result );
+        System.out.println( number1 + " + " + number2 + " = " + result );
     }
 }

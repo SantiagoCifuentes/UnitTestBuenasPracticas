@@ -25,12 +25,12 @@ public class BasicCalculator
         logger.info("Restando {} - {}", number1, number2);
         return  number1-number2;
     }
-    public int dividir (Long number1, Long number2)
+    public Long dividir (Long number1, Long number2)
     {
-        var div = 0;
+        Long div = Long.valueOf(0);
 
         try {
-            div = (int) (number1 / number2);
+            div =  (number1 / number2);
             logger.info("Dividiendo {} / {}", number1, number2);
         }catch (ArithmeticException e)
         {
